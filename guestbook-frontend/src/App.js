@@ -14,6 +14,8 @@ function App() {
 
   useEffect(() => {
     fetchMessages();
+    const interval = setInterval(fetchMessages, 10000); // Auto-refresh every 10 sec
+    return () => clearInterval(interval);
   }, []);
 
   const handleSubmit = async (e) => {
@@ -28,6 +30,15 @@ function App() {
     fetchMessages();
   };
 
+  const handleReaction = async (id, type) => {
+    await fetch(`http://localhost:8000/api/react/${id}/`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ type }),
+    });
+    fetchMessages();
+  };
+
   return (
     <div className="App">
       <h1>📝 Guestbook</h1>
@@ -39,9 +50,14 @@ function App() {
       <hr />
       <h2>Messages:</h2>
       {messages.map(msg => (
-        <div key={msg.id} style={{borderBottom: '1px solid #ccc', padding: '10px'}}>
+        <div key={msg.id} style={{ borderBottom: '1px solid #ccc', padding: '10px' }}>
           <strong>{msg.name}</strong>: {msg.content}
           <br /><small>{new Date(msg.timestamp).toLocaleString()}</small>
+          <div style={{ marginTop: '8px' }}>
+            <button onClick={() => handleReaction(msg.id, 'like')}>👍 {msg.reactions?.like || 0}</button>
+            <button onClick={() => handleReaction(msg.id, 'love')}>❤️ {msg.reactions?.love || 0}</button>
+            <button onClick={() => handleReaction(msg.id, 'funny')}>😂 {msg.reactions?.funny || 0}</button>
+          </div>
         </div>
       ))}
     </div>

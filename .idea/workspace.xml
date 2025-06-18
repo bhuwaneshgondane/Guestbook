@@ -1,15 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="18aff5fe-1632-4298-9025-3fb31fc1a121" name="Changes" comment="" />
+    <list default="true" id="18aff5fe-1632-4298-9025-3fb31fc1a121" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/GuestBook.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GuestBook.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guestbook-frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/guestbook-frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guestbook_backend/guestbook/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/guestbook_backend/guestbook/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guestbook_backend/guestbook/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/guestbook_backend/guestbook/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "bhuwaneshgondane"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/bhuwaneshgondane/Guestbook.git",
+    "accountId": "eabf2ba0-186b-44e4-8203-f4fa2d1f6496"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 3
 }]]></component>
@@ -22,9 +50,15 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\DigitalBlinc\Guestbook\guestbook_backend\guestbook" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -41,5 +75,16 @@
       <updated>1750242176077</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/guestbook_backend/guestbook_backend/urls.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
